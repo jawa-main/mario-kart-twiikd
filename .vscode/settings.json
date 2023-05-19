@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "*.JLT": "lisp",
+    "*.properties": "minecraft-lang",
+    "revolution.h": "c",
+    "os.h": "c",
+    "kamek.h": "c"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
+}
