@@ -1,0 +1,1 @@
+int OSRestoreInterrupts(int level);

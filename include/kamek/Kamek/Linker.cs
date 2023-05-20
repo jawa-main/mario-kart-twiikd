@@ -295,9 +295,10 @@ namespace Kamek
         }
 
 
-        Symbol ResolveSymbol(Elf elf, string name)
+        Symbol ResolveSymbol(Elf elf, string nm)
         {
             var locals = _localSymbols[elf];
+            string name = nm.Replace("__Fi", "");
             if (locals.ContainsKey(name))
                 return locals[name];
             if (_globalSymbols.ContainsKey(name))

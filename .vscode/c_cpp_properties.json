@@ -1,16 +1,20 @@
 {
-  "configurations": [
-    {
-      "name": "ppc",
-      "includePath": [
-        "${default}",
-        "include/kamek/k_stdlib",
-        "C:/RVL_SDK/include"
-      ],
-      "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
-      //   "compilerPath": "C:\\Program Files (x86)\\Freescale\\CW for MPC55xx and MPC56xx 2.10\\PowerPC_EABI_Tools\\Command_Line_Tools\\mwcceppc.exe",
-      "intelliSenseMode": "${default}"
-    }
-  ],
-  "version": 4
+    "configurations": [
+        {
+            "name": "ppc",
+            "includePath": [
+                "${default}",
+                "include/kamek/k_stdlib",
+                "C:/RVL_SDK/include",
+                "${workspaceFolder}/src"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
 }

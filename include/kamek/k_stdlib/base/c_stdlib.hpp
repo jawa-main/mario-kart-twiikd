@@ -6,8 +6,6 @@ extern "C"
 {
 #endif
 
-    typedef unsigned short wchar_t;
-
     /* math.h */
     double acos(double);
     double asin(double);

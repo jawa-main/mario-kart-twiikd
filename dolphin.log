@@ -1,0 +1,750 @@
+35:12:576 Core\HLE\HLE.cpp:133 I[HLE]: Patching OSPanic 801a25c0
+35:12:577 Core\HLE\HLE.cpp:133 I[HLE]: Patching OSReport 801a2530
+35:12:577 Core\HLE\HLE.cpp:133 I[HLE]: Patching DEBUGPrint 801cb8e8
+35:12:577 Core\HLE\HLE.cpp:133 I[HLE]: Patching WUD_DEBUGPrint 801d092c
+35:12:578 Core\HLE\HLE.cpp:133 I[HLE]: Patching __DSP_debug_printf 8015d598
+35:12:578 Core\HLE\HLE.cpp:133 I[HLE]: Patching vprintf 80010c50
+35:12:578 Core\HLE\HLE.cpp:133 I[HLE]: Patching printf 80010b84
+35:12:579 Core\HLE\HLE.cpp:133 I[HLE]: Patching DWC_Printf 800ccfc8
+35:12:580 Core\HLE\HLE.cpp:133 I[HLE]: Patching __write_console 800149a0
+35:12:931 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - EXI 	release build: Aug  8 2007 01:59:22 (0x4199_60831) >>
+
+35:12:932 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - SI 	release build: Aug  8 2007 02:07:10 (0x4199_60831) >>
+
+35:12:973 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: 
+
+35:12:973 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: Revolution OS
+
+35:12:974 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: Kernel built : Jan 28 2008 09:31:54
+
+35:12:974 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: Console Type : NDEV 2.1
+
+35:12:975 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: Firmware     : 36.14.24 (3/3/2010)
+
+35:12:975 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: Memory 88 MB
+
+35:12:976 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: MEM1 Arena : 0x80394e00 - 0x817f0220
+
+35:12:976 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: MEM2 Arena : 0x90000800 - 0x935e0000
+
+35:12:976 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - OS 	release build: Jan 28 2008 09:31:54 (0x4199_60831) >>
+
+35:13:009 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - SC 	release build: Aug  8 2007 02:09:03 (0x4199_60831) >>
+
+35:13:010 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - NAND 	release build: Dec 11 2007 01:35:48 (0x4199_60831) >>
+
+35:13:023 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - NWC24 	release build: Dec 10 2007 10:02:25 (0x4199_60831) >>
+
+35:13:026 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - DVD 	release build: Aug  8 2007 01:59:13 (0x4199_60831) >>
+
+35:13:029 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - EF 	final   build: Mar  8 2008 20:58:16 (0x4201_127) >>
+
+35:13:035 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - GX 	release build: Dec 11 2007 01:34:15 (0x4199_60831) >>
+
+35:13:041 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - VI 	release build: Aug  8 2007 02:07:17 (0x4199_60831) >>
+
+35:13:081 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - WPAD 	release build: Jan 29 2008 21:01:28 (0x4199_60726) >>
+
+35:13:082 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - KPAD 	release build: Aug  8 2007 02:05:53 (0x4199_60831) >>
+
+35:13:082 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - PAD 	release build: Oct  3 2007 01:00:54 (0x4199_60831) >>
+
+35:13:089 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: [SYS] Static .text: 0x80004000-0x80384dfc(3588KBytes)
+
+35:13:089 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: [SYS] Get SimpleAddressData. ID=0x31000000 latitude=0x0, longitude=0x0
+
+35:13:089 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: [SYS] Matching Area: 1
+
+35:13:089 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: [SYS] isNdev: TRUE returnCode: 0x00000000 launchCode: 0x00000000
+
+35:13:089 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: [SYS] LaunchType: 0
+
+35:13:090 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: [SYS] Argument=""
+
+35:13:090 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ***********************************
+
+35:13:090 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: *   NTSC/Progressive/PAL60 mode   *
+
+35:13:090 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ***********************************
+
+35:14:436 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: id                1
+
+35:14:436 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: numSections       17
+
+35:14:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: sectionInfoOffset 8050bfach
+
+35:14:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: nameOffset        00000000h []
+
+35:14:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: nameSize          58
+
+35:14:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: version           3
+
+35:14:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: 
+
+35:14:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: offset1           0x8050c035 - 0x8088afd1
+
+35:14:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: offset2           0x8088afd0 - 0x8088b2d4
+
+35:14:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: offset3           0x8088b2d4 - 0x8088b2e0
+
+35:14:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: offset4           0x8088b2e0 - 0x808ae520
+
+35:14:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: offset5           0x808ae520 - 0x808d8c7c
+
+35:14:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: offset6           0x809b8f20 - 0x809c07d0
+
+35:14:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: 
+
+35:14:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: bssSize           30896
+
+35:14:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: relOffset         808d8c8ch
+
+35:14:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: impOffset         808d8c7ch
+
+35:14:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: impSize           00000010h
+
+35:14:438 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: prolog            8054f2fch
+
+35:14:438 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: epilog            8054f348h
+
+35:14:438 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: unresolved        8054f390h
+
+35:14:438 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: align             00000020h
+
+35:14:438 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: bssAlign          00000020h
+
+35:14:438 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fixSize           808d8c8ch
+
+35:14:438 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: 
+
+35:14:438 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: [Rel] Load Module[1]: size=4902816Bytes time=1197msec
+
+35:14:906 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: 20071023
+
+35:14:907 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - AI 	release build: Aug  8 2007 01:58:12 (0x4199_60831) >>
+
+35:14:907 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - AX 	release build: Aug  8 2007 01:58:18 (0x4199_60831) >>
+
+35:14:908 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - DSP 	release build: Aug  8 2007 01:59:06 (0x4199_60831) >>
+
+35:14:913 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - SND 	final   build: Mar  8 2008 20:59:14 (0x4201_127) >>
+
+35:16:526 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - DWC 	release build: Mar  1 2008 21:50:41 (0x4199_60831) >>
+
+35:16:781 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - RFL 	release build: Jan 28 2008 15:34:44 (0x4201_127) >>
+
+35:17:580 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - LYT 	final   build: Mar  8 2008 20:59:41 (0x4201_127) >>
+
+35:17:929 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: [CINS] OSIsTitleInstalled(0x00010004524d4345) start
+
+35:17:937 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: [CINS] OSIsTitleInstalled(0x00010004524d4345) errcode=1
+
+35:18:814 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - G3D 	final   build: Mar  8 2008 20:58:12 (0x4201_127) >>
+
+35:18:888 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 1, cb: 8064c2c4
+
+35:20:777 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ------------------- 1 Scene Exit -------------------
+
+35:21:648 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - G3D 	final   build: Mar  8 2008 20:58:12 (0x4201_127) >>
+
+35:21:659 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4d, cb: 805d8804
+
+35:21:661 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 52, cb: 805b9524
+
+35:21:665 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 54, cb: 806311fc
+
+35:21:665 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 55, cb: 80623eb4
+
+35:21:666 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 56, cb: 80624110
+
+35:21:666 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 57, cb: 806097cc
+
+35:21:668 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 58, cb: 8060a234
+
+35:21:668 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 59, cb: 8060a844
+
+35:21:713 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - THP 	release build: Aug  8 2007 01:31:54 (0x4199_60831) >>
+
+35:21:717 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5a, cb: 80830dc8
+
+35:21:832 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5e, cb: 8081eca4
+
+35:21:834 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 65, cb: 80631e90
+
+35:22:427 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - NCD 	release build: Dec 10 2007 10:02:22 (0x4199_60831) >>
+
+35:26:836 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ------------------- 1 Scene Exit -------------------
+
+35:28:057 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - G3D 	final   build: Mar  8 2008 20:58:12 (0x4201_127) >>
+
+35:28:091 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4b, cb: 80852e30
+
+35:28:093 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4d, cb: 805d8804
+
+35:28:094 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4f, cb: 805b5464
+
+35:28:095 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 51, cb: 805d8b90
+
+35:28:096 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 52, cb: 805b9524
+
+35:28:097 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 53, cb: 8061f4dc
+
+35:28:097 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5c, cb: 8063bd24
+
+35:28:098 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5e, cb: 8081eca4
+
+35:28:098 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 69, cb: 8082f908
+
+35:28:105 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - THP 	release build: Aug  8 2007 01:31:54 (0x4199_60831) >>
+
+35:28:105 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6a, cb: 80824a48
+
+35:28:108 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6b, cb: 80822afc
+
+35:28:126 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6c, cb: 80827e90
+
+35:28:135 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6d, cb: 8082e7e8
+
+35:28:138 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6e, cb: 8082649c
+
+35:28:148 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6f, cb: 80825894
+
+35:28:161 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 70, cb: 80607b94
+
+35:28:162 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 71, cb: 80608568
+
+35:28:172 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 72, cb: 80857dc4
+
+35:28:178 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 73, cb: 80832848
+
+35:28:203 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 74, cb: 80830798
+
+35:28:210 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 75, cb: 80821078
+
+35:28:215 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 76, cb: 8085153c
+
+35:28:219 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 77, cb: 80821ae4
+
+35:28:240 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 78, cb: 808502c8
+
+35:28:248 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 79, cb: 80852548
+
+35:28:266 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 7f, cb: 8063834c
+
+35:28:284 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: a7, cb: 805cafa8
+
+36:35:963 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ------------------- 1 Scene Exit -------------------
+
+36:36:894 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - G3D 	final   build: Mar  8 2008 20:58:12 (0x4201_127) >>
+
+36:36:903 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4d, cb: 805d8804
+
+36:36:903 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 52, cb: 805b9524
+
+36:36:903 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 54, cb: 806311fc
+
+36:36:903 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 55, cb: 80623eb4
+
+36:36:904 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 56, cb: 80624110
+
+36:36:904 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 57, cb: 806097cc
+
+36:36:905 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 58, cb: 8060a234
+
+36:36:906 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 59, cb: 8060a844
+
+36:36:906 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - THP 	release build: Aug  8 2007 01:31:54 (0x4199_60831) >>
+
+36:36:906 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5a, cb: 80830dc8
+
+36:36:921 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5e, cb: 8081eca4
+
+36:36:921 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 65, cb: 80631e90
+
+36:40:935 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ------------------- 1 Scene Exit -------------------
+
+36:42:068 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - G3D 	final   build: Mar  8 2008 20:58:12 (0x4201_127) >>
+
+36:42:076 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4b, cb: 80852e30
+
+36:42:077 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4c, cb: 805b51cc
+
+36:42:077 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4d, cb: 805d8804
+
+36:42:077 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 52, cb: 805b9524
+
+36:42:078 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5c, cb: 8063bd24
+
+36:42:078 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5e, cb: 8081eca4
+
+36:42:079 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 60, cb: 8082af68
+
+36:42:091 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 61, cb: 805de708
+
+36:42:092 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 62, cb: 805df0c4
+
+36:42:094 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 63, cb: 805dfdfc
+
+36:42:097 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 64, cb: 805e0670
+
+36:42:100 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6b, cb: 80822afc
+
+36:42:122 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6e, cb: 8082649c
+
+36:42:124 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - THP 	release build: Aug  8 2007 01:31:54 (0x4199_60831) >>
+
+36:42:138 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6f, cb: 80825894
+
+36:42:148 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 72, cb: 80857dc4
+
+36:42:152 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 73, cb: 80832848
+
+36:42:182 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 74, cb: 80830798
+
+36:42:190 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 75, cb: 80821078
+
+36:42:194 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 77, cb: 80821ae4
+
+36:42:216 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 78, cb: 808502c8
+
+36:42:226 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 79, cb: 80852548
+
+36:42:236 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 7f, cb: 8063834c
+
+36:42:247 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 80, cb: 8082dbec
+
+36:42:250 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 81, cb: 8082c7cc
+
+36:42:262 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 82, cb: 808552a8
+
+36:42:268 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 83, cb: 80856318
+
+36:45:304 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ------------------- 1 Scene Exit -------------------
+
+36:46:203 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - G3D 	final   build: Mar  8 2008 20:58:12 (0x4201_127) >>
+
+36:46:213 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4d, cb: 805d8804
+
+36:46:213 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 52, cb: 805b9524
+
+36:46:213 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 54, cb: 806311fc
+
+36:46:213 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 55, cb: 80623eb4
+
+36:46:213 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 56, cb: 80624110
+
+36:46:213 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 57, cb: 806097cc
+
+36:46:214 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 58, cb: 8060a234
+
+36:46:214 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 59, cb: 8060a844
+
+36:46:214 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - THP 	release build: Aug  8 2007 01:31:54 (0x4199_60831) >>
+
+36:46:216 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5a, cb: 80830dc8
+
+36:46:230 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5e, cb: 8081eca4
+
+36:46:230 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 65, cb: 80631e90
+
+36:50:111 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ------------------- 1 Scene Exit -------------------
+
+36:51:009 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - G3D 	final   build: Mar  8 2008 20:58:12 (0x4201_127) >>
+
+36:51:032 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4d, cb: 805d8804
+
+36:51:032 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 51, cb: 805d8b90
+
+36:51:032 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 52, cb: 805b9524
+
+36:51:032 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5e, cb: 8081eca4
+
+36:51:033 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: a2, cb: 805b7864
+
+36:51:045 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: a3, cb: 805b8c34
+
+36:51:046 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: a4, cb: 805b8550
+
+36:55:239 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ------------------- 4 Scene Exit -------------------
+
+36:56:185 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - G3D 	final   build: Mar  8 2008 20:58:12 (0x4201_127) >>
+
+36:56:194 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4d, cb: 805d8804
+
+36:56:194 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 52, cb: 805b9524
+
+36:56:195 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 54, cb: 806311fc
+
+36:56:195 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 55, cb: 80623eb4
+
+36:56:195 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 56, cb: 80624110
+
+36:56:195 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 57, cb: 806097cc
+
+36:56:195 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 58, cb: 8060a234
+
+36:56:195 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 59, cb: 8060a844
+
+36:56:198 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - THP 	release build: Aug  8 2007 01:31:54 (0x4199_60831) >>
+
+36:56:198 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5a, cb: 80830dc8
+
+36:56:214 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5e, cb: 8081eca4
+
+36:56:214 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 65, cb: 80631e90
+
+36:59:444 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ------------------- 1 Scene Exit -------------------
+
+37:00:392 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - G3D 	final   build: Mar  8 2008 20:58:12 (0x4201_127) >>
+
+37:00:408 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4c, cb: 805b51cc
+
+37:00:409 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4d, cb: 805d8804
+
+37:00:409 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4e, cb: 8061eee8
+
+37:00:410 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4f, cb: 805b5464
+
+37:00:410 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 50, cb: 805b5464
+
+37:00:410 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 51, cb: 805d8b90
+
+37:00:410 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 52, cb: 805b9524
+
+37:00:411 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5e, cb: 8081eca4
+
+37:00:411 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6b, cb: 80822afc
+
+37:00:423 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6c, cb: 80827e90
+
+37:00:443 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6d, cb: 8082e7e8
+
+37:00:448 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 76, cb: 8085153c
+
+37:00:453 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 7f, cb: 8063834c
+
+37:00:463 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 84, cb: 806140a8
+
+37:00:464 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 85, cb: 80615874
+
+37:00:466 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 86, cb: 80615eac
+
+37:00:467 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 87, cb: 806166bc
+
+37:00:467 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 88, cb: 80616d14
+
+37:00:468 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 89, cb: 80617284
+
+37:00:469 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 8b, cb: 806185fc
+
+37:00:476 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 8c, cb: 80618f0c
+
+37:00:480 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 8d, cb: 80619784
+
+37:00:488 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 8f, cb: 805e3988
+
+37:00:499 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 95, cb: 805ce5c0
+
+37:00:501 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 96, cb: 805c7350
+
+37:00:640 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 97, cb: 805c89d8
+
+37:00:646 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 98, cb: 805c9a88
+
+37:00:647 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 99, cb: 805ca1ec
+
+37:00:648 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 9b, cb: 8062d934
+
+37:00:649 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 9c, cb: 8062a1e8
+
+37:00:654 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 9d, cb: 80628780
+
+37:00:656 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 9e, cb: 8062c620
+
+37:00:662 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: a5, cb: 805ed2c4
+
+37:00:663 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: a6, cb: 805edf78
+
+37:00:679 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: a7, cb: 805cafa8
+
+37:02:515 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - SO 	release build: Dec 10 2007 10:02:35 (0x4199_60831) >>
+
+37:21:144 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - SOCKET 	release build: Dec 10 2007 10:02:35 (0x4199_60831) >>
+
+37:21:219 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - NHTTP 	release build: Oct 11 2007 20:49:15 (0x4199_60726) >>
+
+37:21:605 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - SSL 	release build: Nov  6 2007 23:10:08 (0x4199_60726) >>
+
+37:22:088 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: [LE-DOWNLOAD]: Init
+
+37:22:089 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: [LE-DOWNLOAD]: download...
+
+37:22:674 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: done
+
+37:22:674 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: [LE-DOWNLOAD]: Is LE-> (0x809a0040)...
+
+37:22:674 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: [LE-CODE]: Wiimmfi Update started
+
+37:22:677 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: [LE-DOWNLOAD]: done
+
+37:33:802 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: [LE-CODE]: NATify done for pid 601026944
+
+37:36:961 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - DWC 	release build: Mar  1 2008 21:50:41 (0x4199_60831) >>
+
+37:37:849 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ------------------- 4 Scene Exit -------------------
+
+37:38:787 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - G3D 	final   build: Mar  8 2008 20:58:12 (0x4201_127) >>
+
+37:38:796 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4d, cb: 805d8804
+
+37:38:796 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 52, cb: 805b9524
+
+37:38:797 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 54, cb: 806311fc
+
+37:38:797 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 55, cb: 80623eb4
+
+37:38:797 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 56, cb: 80624110
+
+37:38:797 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 57, cb: 806097cc
+
+37:38:797 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 58, cb: 8060a234
+
+37:38:799 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 59, cb: 8060a844
+
+37:38:799 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - THP 	release build: Aug  8 2007 01:31:54 (0x4199_60831) >>
+
+37:38:799 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5a, cb: 80830dc8
+
+37:38:814 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5e, cb: 8081eca4
+
+37:38:814 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 65, cb: 80631e90
+
+38:26:659 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ------------------- 1 Scene Exit -------------------
+
+38:27:607 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - G3D 	final   build: Mar  8 2008 20:58:12 (0x4201_127) >>
+
+38:27:622 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4c, cb: 805b51cc
+
+38:27:622 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4d, cb: 805d8804
+
+38:27:622 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4e, cb: 8061eee8
+
+38:27:622 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4f, cb: 805b5464
+
+38:27:623 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 50, cb: 805b5464
+
+38:27:623 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 51, cb: 805d8b90
+
+38:27:623 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 52, cb: 805b9524
+
+38:27:623 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5e, cb: 8081eca4
+
+38:27:624 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6b, cb: 80822afc
+
+38:27:639 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6c, cb: 80827e90
+
+38:27:660 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6d, cb: 8082e7e8
+
+38:27:665 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 76, cb: 8085153c
+
+38:27:669 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 7f, cb: 8063834c
+
+38:27:677 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 84, cb: 806140a8
+
+38:27:677 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 85, cb: 80615874
+
+38:27:678 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 86, cb: 80615eac
+
+38:27:682 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 87, cb: 806166bc
+
+38:27:682 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 88, cb: 80616d14
+
+38:27:682 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 89, cb: 80617284
+
+38:27:683 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 8b, cb: 806185fc
+
+38:27:690 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 8c, cb: 80618f0c
+
+38:27:695 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 8d, cb: 80619784
+
+38:27:704 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 8f, cb: 805e3988
+
+38:27:713 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 95, cb: 805ce5c0
+
+38:27:714 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 96, cb: 805c7350
+
+38:27:843 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 97, cb: 805c89d8
+
+38:27:846 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 98, cb: 805c9a88
+
+38:27:847 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 99, cb: 805ca1ec
+
+38:27:847 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 9b, cb: 8062d934
+
+38:27:847 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 9c, cb: 8062a1e8
+
+38:27:851 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 9d, cb: 80628780
+
+38:27:852 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 9e, cb: 8062c620
+
+38:27:855 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: a5, cb: 805ed2c4
+
+38:27:855 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: a6, cb: 805edf78
+
+38:27:881 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: a7, cb: 805cafa8
+
+38:40:806 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: [LE-CODE]: NATify done for pid 601026944
+
+38:44:046 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - DWC 	release build: Mar  1 2008 21:50:41 (0x4199_60831) >>
+
+38:44:936 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ------------------- 4 Scene Exit -------------------
+
+38:45:877 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - G3D 	final   build: Mar  8 2008 20:58:12 (0x4201_127) >>
+
+38:45:885 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4d, cb: 805d8804
+
+38:45:885 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 52, cb: 805b9524
+
+38:45:885 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 54, cb: 806311fc
+
+38:45:885 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 55, cb: 80623eb4
+
+38:45:885 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 56, cb: 80624110
+
+38:45:885 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 57, cb: 806097cc
+
+38:45:885 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 58, cb: 8060a234
+
+38:45:885 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 59, cb: 8060a844
+
+38:45:888 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - THP 	release build: Aug  8 2007 01:31:54 (0x4199_60831) >>
+
+38:45:888 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5a, cb: 80830dc8
+
+38:45:903 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5e, cb: 8081eca4
+
+38:45:903 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 65, cb: 80631e90
+
+38:49:033 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ------------------- 1 Scene Exit -------------------
+
+38:49:616 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - G3D 	final   build: Mar  8 2008 20:58:12 (0x4201_127) >>
+
+38:49:633 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 52, cb: 805b9524
+
+38:49:633 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5e, cb: 8081eca4
+
+38:49:634 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 60, cb: 8082af68
+
+38:49:642 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 61, cb: 805de708
+
+38:49:642 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 62, cb: 805df0c4
+
+38:49:645 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 63, cb: 805dfdfc
+
+38:49:649 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 64, cb: 805e0670
+
+38:49:653 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 8a, cb: 80617cc8
+
+38:54:488 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ------------------- 4 Scene Exit -------------------
+
+38:55:436 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - G3D 	final   build: Mar  8 2008 20:58:12 (0x4201_127) >>
+
+38:55:445 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4d, cb: 805d8804
+
+38:55:445 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 52, cb: 805b9524
+
+38:55:445 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 54, cb: 806311fc
+
+38:55:445 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 55, cb: 80623eb4
+
+38:55:445 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 56, cb: 80624110
+
+38:55:445 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 57, cb: 806097cc
+
+38:55:446 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 58, cb: 8060a234
+
+38:55:446 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 59, cb: 8060a844
+
+38:55:446 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - THP 	release build: Aug  8 2007 01:31:54 (0x4199_60831) >>
+
+38:55:446 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5a, cb: 80830dc8
+
+38:55:463 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5e, cb: 8081eca4
+
+38:55:463 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 65, cb: 80631e90
+
+39:02:631 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ------------------- 1 Scene Exit -------------------
+
+39:03:580 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << NW4R    - G3D 	final   build: Mar  8 2008 20:58:12 (0x4201_127) >>
+
+39:03:597 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4c, cb: 805b51cc
+
+39:03:597 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4d, cb: 805d8804
+
+39:03:597 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4e, cb: 8061eee8
+
+39:03:597 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 4f, cb: 805b5464
+
+39:03:597 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 50, cb: 805b5464
+
+39:03:598 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 51, cb: 805d8b90
+
+39:03:598 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 52, cb: 805b9524
+
+39:03:598 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 5e, cb: 8081eca4
+
+39:03:598 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6b, cb: 80822afc
+
+39:03:610 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6c, cb: 80827e90
+
+39:03:631 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 6d, cb: 8082e7e8
+
+39:03:636 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 76, cb: 8085153c
+
+39:03:640 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 7f, cb: 8063834c
+
+39:03:649 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 84, cb: 806140a8
+
+39:03:649 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 85, cb: 80615874
+
+39:03:650 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 86, cb: 80615eac
+
+39:03:654 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 87, cb: 806166bc
+
+39:03:654 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 88, cb: 80616d14
+
+39:03:654 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 89, cb: 80617284
+
+39:03:654 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 8b, cb: 806185fc
+
+39:03:662 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 8c, cb: 80618f0c
+
+39:03:668 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 8d, cb: 80619784
+
+39:03:674 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 8f, cb: 805e3988
+
+39:03:685 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 95, cb: 805ce5c0
+
+39:03:686 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 96, cb: 805c7350
+
+39:03:813 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 97, cb: 805c89d8
+
+39:03:816 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 98, cb: 805c9a88
+
+39:03:817 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 99, cb: 805ca1ec
+
+39:03:817 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 9b, cb: 8062d934
+
+39:03:817 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 9c, cb: 8062a1e8
+
+39:03:821 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 9d, cb: 80628780
+
+39:03:822 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: 9e, cb: 8062c620
+
+39:03:825 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: a5, cb: 805ed2c4
+
+39:03:826 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: a6, cb: 805edf78
+
+39:03:853 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: CHETOF id: a7, cb: 805cafa8
+
+39:13:975 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: << RVL_SDK - DWC 	release build: Mar  1 2008 21:50:41 (0x4199_60831) >>

@@ -4,7 +4,16 @@
     "*.properties": "minecraft-lang",
     "revolution.h": "c",
     "os.h": "c",
-    "kamek.h": "c"
+    "kamek.h": "c",
+    "page.hpp": "c",
+    "inputmanager.hpp": "c",
+    "rk_types.h": "c",
+    "controlgroup.hpp": "c",
+    "page.h": "c",
+    "controlgroup.h": "c",
+    "cmath": "cpp",
+    "cassert": "cpp",
+    "stdint.h": "c"
   },
-  "C_Cpp.errorSquiggles": "disabled"
+  "C_Cpp.errorSquiggles": "enabled"
 }
