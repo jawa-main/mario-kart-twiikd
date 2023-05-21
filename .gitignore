@@ -4,4 +4,5 @@ obj/
 riderModule.iml
 /_ReSharper.Caches/
 build/
-include/mkw_decomp
+include/*
+!include/kamek/kamek/bin/debug/net6.0
