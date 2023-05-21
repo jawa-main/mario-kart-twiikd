@@ -1,12 +1,16 @@
 #include <revokart/rk_stdlib.hpp>
 #include <revokart/Page.hpp>
-#include <twiiks/szs_getfile/no_invisible_walls.hpp>
+
 #include <util.hpp>
+
+#include <twiiks/dvd/dvd_hooks.hpp>
+#include <twiiks/szs_getfile/no_invisible_walls.hpp>
+#include <twiiks/globals.hpp>
 
 #define BL_MASK 0b01001000000000000000000000000000
 #define DELTA_MASK 0b00000011111111111111111111111100
 
-void rel_branch(u32 address, void *func, bool link = true)
+void runtime_branch(u32 address, void *func, bool link = true)
 {
     u32 delta = (u32)func - address;
     u32 bl = BL_MASK | (delta & DELTA_MASK);
@@ -26,11 +30,14 @@ void twiikd_start()
     // code
     OSReport("nkw start: %x\n", &twiikd_start);
 
+    twiikd_init_globals();
+
     __asm("lis r4, 0x8000");
 };
 
 // #define __relsym__Page_initChildren 0x805ddb7c
 #define __relsym__System_DVDArchive_getFile 0x80515084
+#define __dolsym__DVDConvertPathToEntrynum 0x8015e1b0
 
 int twiikd_after_rel_load()
 {
@@ -39,11 +46,7 @@ int twiikd_after_rel_load()
 
     OSReport("twiikd after rel load: %x\n", &twiikd_after_rel_load);
 
-    OSReport("Function addresses:\n");
-    OSReport("  System_DVDArchive_getFile_hook: %x\n", &System_DVDArchive_getFile_hook);
-
-    // rel_branch(__relsym__System_DVDArchive_getFile, &System_DVDArchive_getFile_hook);
-    // *(u32 *)(__relsym__System_DVDArchive_getFile + 4) = 0x7D8803A6; // mtlr r12
+    runtime_branch(__dolsym__DVDConvertPathToEntrynum, &DVDConvertPathToEntrynum_hook, false);
 
     return 0;
 };
@@ -55,9 +58,8 @@ void* DVDReadPrio_hook(s32 read_len)
 
     __asm("mr %0, r28" : "=r" (buf));
     __asm("mr %0, r27" : "=r" (dvd_file_info));
-
     
 
-    OSReport("DVDReadPrio entry %d filename %s\n", )
+    // OSReport("DVDReadPrio entry %d filename %s\n", )
     return buf;
 };

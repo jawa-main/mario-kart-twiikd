@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Kamek
@@ -12,6 +13,8 @@ namespace Kamek
         private bool _linked = false;
         private List<Elf> _modules = new List<Elf>();
         public readonly AddressMapper Mapper;
+
+        public static List<string> FixedUndefinedSymbols = new List<string>();
 
         public Linker(AddressMapper mapper)
         {
@@ -295,16 +298,23 @@ namespace Kamek
         }
 
 
-        Symbol ResolveSymbol(Elf elf, string nm)
+        Symbol ResolveSymbol(Elf elf, string name)
         {
             var locals = _localSymbols[elf];
-            string name = nm.Replace("__Fi", "");
+
+            string name_wo_end = name;
+
+            foreach (string item in FixedUndefinedSymbols)
+            {
+                name_wo_end = Regex.Replace(name_wo_end, item, "");
+            }
+
             if (locals.ContainsKey(name))
                 return locals[name];
             if (_globalSymbols.ContainsKey(name))
                 return _globalSymbols[name];
-            if (_externalSymbols.ContainsKey(name))
-                return new Symbol { address = new Word(WordType.AbsoluteAddr, _externalSymbols[name]) };
+            if (_externalSymbols.ContainsKey(name_wo_end))
+                return new Symbol { address = new Word(WordType.AbsoluteAddr, _externalSymbols[name_wo_end]) };
             if (name.StartsWith("__kAutoMap_")) {
                 var addr = name.Substring(11);
                 if (addr.StartsWith("0x") || addr.StartsWith("0X"))

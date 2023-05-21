@@ -10,10 +10,21 @@ namespace Kamek
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] _args)
         {
-            Console.WriteLine("Kamek 2.0 by Ninji/Ash Wolf - https://github.com/Treeki/Kamek");
-            Console.WriteLine();
+            // Console.WriteLine("Kamek 2.0 by Ninji/Ash Wolf - https://github.com/Treeki/Kamek");
+            // Console.WriteLine();
+            List<string> args = _args.ToList();
+
+            int sidx = Array.IndexOf(_args, "--undef-sym-mask");
+            if (sidx != -1)
+            {
+                Linker.FixedUndefinedSymbols = _args[sidx + 1].Split(",").ToList();
+
+
+                args.RemoveAt(sidx);
+                args.RemoveAt(sidx);
+            }
 
             // Parse the command line arguments and do cool things!
             var modules = new List<Elf>();

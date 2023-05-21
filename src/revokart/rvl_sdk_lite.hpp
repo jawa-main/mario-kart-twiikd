@@ -1,7 +1,8 @@
-int OSRestoreInterrupts(int level);
-void OSReport(const char* fmt,...);
+#ifndef RVL_SDK_LITE
+#define RVL_SDK_LITE
 
-void _restgpr_27();
+void OSRestoreInterrupts(int level);
+void OSReport(const char* fmt,...);
 
 #pragma region ARC
 
@@ -437,3 +438,5 @@ extern "C"
 
 #endif // __DVD_H__
 #pragma endregion
+
+#endif
