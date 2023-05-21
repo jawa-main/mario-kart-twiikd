@@ -4,8 +4,6 @@
 #define NULL 0
 #endif
 
-// Unknown types
-
 //! Describes an unknown 32 bit value
 typedef int unk32;
 //! Describes an unknown 16 bit value

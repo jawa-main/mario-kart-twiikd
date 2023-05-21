@@ -1,0 +1,36 @@
+Kamek 2.0 by Ninji/Ash Wolf - https://github.com/Treeki/Kamek
+
+Syntax:
+  Kamek file1.o [file2.o...] [options]
+
+Options:
+  Build Mode (select one; defaults to -dynamic):
+    -dynamic
+      generate a dynamically linked Kamek binary for use with the loader
+    -static=0x80001900
+      generate a blob of code which must be loaded at the specified Wii RAM address
+
+  Game Configuration:
+    -externals=file.txt
+      specify the addresses of external symbols that exist in the target game
+    -versions=file.txt
+      specify the different executable versions that Kamek can link binaries for
+    -select-version=key
+      build only one version from the versions file, and ignore the rest
+      (can be specified multiple times)
+
+  Outputs (at least one is required; $KV$ will be replaced with the version name):
+    -output-kamek=file.$KV$.bin
+      write a Kamek binary to for use with the loader (-dynamic only)
+    -output-riiv=file.$KV$.xml
+      write a Riivolution XML fragment (-static only)
+    -output-dolphin=file.$KV$.ini
+      write a Dolphin INI fragment (-static only)
+    -output-gecko=file.$KV$.xml
+      write a list of Gecko codes (-static only)
+    -output-ar=file.$KV$.xml
+      write a list of Action Replay codes (-static only)
+    -input-dol=file.$KV$.dol -output-dol=file2.$KV$.dol
+      apply these patches and generate a modified DOL (-static only)
+    -output-code=file.$KV$.bin
+      write the combined code+data segment to file.bin (for manual injection or debugging)

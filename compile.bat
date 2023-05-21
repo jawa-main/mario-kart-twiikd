@@ -7,6 +7,7 @@ set OUT="build/out/twiikd.o"
 set BINOUT="build/bin/twiikd.bin"
 set GECKO_OUT="build/gecko/twiikd.txt"
 set DOLOUT="build/full/sys/main.dol"
+set MW_SYMOUT="C:\Users\jasam\Documents\Dolphin Emulator\Maps\1_RMCE01.map"
 
 set DOLIN="data/main-ntscu.dol"
 
@@ -16,13 +17,22 @@ set MAIN_C="src/main.cpp"
 set ENTRYPOINT=0x802c0000
 set SYM_TXT="data/symbols.txt"
 
+set PY_JOIN_DOL_SYM="util/join_sym.py"
 
-msbuild %KAMEK_SLN%
-if ERRORLEVEL 1 exit
-%CC% -I- -i %K_STDLIB% -i "src/" -i "src/revokart/" -i "src/mod/" -Cpp_exceptions off -enum int -Os -use_lmw_stmw on -fp hard -rostr -sdata 0 -sdata2 0 -c -o %OUT% %MAIN_C%
-if ERRORLEVEL 1 exit
+set GAMEID="RMCE01"
+
+echo ---------------COMPILATION START---------------
+
+%CC% -I- -i %K_STDLIB% -i "src/" -i "src/revokart/" -i "src/mod/" -Cpp_exceptions off -enum int -Os -use_lmw_stmw on -fp hard -rostr -sdata 0 -sdata2 0 -c -o %OUT% %MAIN_C% -W off -map %MW_SYMOUT%
+echo %ERRORLEVEL%
+if %DEBUG% 1 (
+    python %PY_JOIN_DOL_SYM% %GAMEID%
+)
+echo %ERRORLEVEL%
+
 %KAMEK% %OUT% -static=%ENTRYPOINT% -externals=%SYM_TXT% -input-dol=%DOLIN% -output-dol=%DOLOUT%
-if ERRORLEVEL 1 exit
-wit copy build/full build/twiikd.wbfs --verbose --progress --overwrite
-@REM KAMEK OUT -dynamic -externals=SYM_TXT -output-kamek=1-dynamic.$KV$.bin
+echo %ERRORLEVEL%
 
+wit copy build/full build/twiikd.wbfs --verbose --progress --overwrite
+echo %ERRORLEVEL%
+echo --------------COMPILATION END--------------
