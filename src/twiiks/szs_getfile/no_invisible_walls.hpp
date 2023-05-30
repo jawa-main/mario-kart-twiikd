@@ -10,7 +10,7 @@ u8 *System_DVDArchive_getFile_hook(u8 *outbuf, ARCHandle handle)
 
     asm ("mr %0, r28" : "=r"(filename));
 
-    OSReport("Filename %s, buf: %x\n", filename, outbuf);
+    twiikd_printf("Filename %s, buf: %x", filename, outbuf);
 
     if (strcmp(filename, "course.kcl") != 0) return outbuf;
     // loaded Race/Course/*.szs
@@ -48,8 +48,8 @@ u8 *System_DVDArchive_getFile_hook(u8 *outbuf, ARCHandle handle)
     }
 
     __asm(
-        "mr r3, %0\n" : "=r"(outbuf)
+        "mr r3, %0" : "=r"(outbuf)
     );
-     __asm(   "lwz r12, 0x124 (sp)\n"
+     __asm(   "lwz r12, 0x124 (sp)"
     );
 };

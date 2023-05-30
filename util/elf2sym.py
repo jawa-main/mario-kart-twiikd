@@ -16,6 +16,8 @@ for symbol in symtab.iter_symbols():
 
     sym_type = symbol.entry['st_info']['type']
 
+    # print(sym_type, symbol.name)
+
     if sym_type != "STT_FUNC":
         continue
 

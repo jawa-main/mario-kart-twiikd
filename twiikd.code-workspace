@@ -1,0 +1,75 @@
+{
+	"folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "../../../../../../../RVL_SDK/include"
+        },
+        {
+            "path": "../../../../../../../devkitPro/libogc/include"
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "*.JLT": "lisp",
+            "*.properties": "minecraft-lang",
+            "revolution.h": "c",
+            "os.h": "c",
+            "kamek.h": "c",
+            "page.hpp": "c",
+            "inputmanager.hpp": "c",
+            "rk_types.h": "c",
+            "controlgroup.hpp": "c",
+            "page.h": "c",
+            "controlgroup.h": "c",
+            "cmath": "cpp",
+            "cassert": "cpp",
+            "stdint.h": "c",
+            "vector": "cpp",
+            "bit": "cpp",
+            "compare": "cpp",
+            "concepts": "cpp",
+            "cstddef": "cpp",
+            "cstdint": "cpp",
+            "cstdio": "cpp",
+            "cstdlib": "cpp",
+            "cstring": "cpp",
+            "cwchar": "cpp",
+            "exception": "cpp",
+            "initializer_list": "cpp",
+            "limits": "cpp",
+            "new": "cpp",
+            "tuple": "cpp",
+            "type_traits": "cpp",
+            "utility": "cpp",
+            "xmemory": "cpp",
+            "xstddef": "cpp",
+            "xtr1common": "cpp",
+            "xutility": "cpp",
+            "chrono": "cpp",
+            "future": "cpp",
+            "system_error": "cpp",
+            "typeindex": "cpp",
+            "xlocale": "cpp",
+            "charconv": "cpp",
+            "xlocnum": "cpp",
+            "any": "cpp",
+            "array": "cpp",
+            "filesystem": "cpp",
+            "format": "cpp",
+            "functional": "cpp",
+            "memory": "cpp",
+            "ratio": "cpp",
+            "regex": "cpp",
+            "variant": "cpp",
+            "xstring": "cpp",
+            "algorithm": "cpp",
+            "forward_list": "cpp",
+            "fstream": "cpp",
+            "list": "cpp",
+            "xhash": "cpp",
+            "xloctime": "cpp"
+        }
+    }
+}

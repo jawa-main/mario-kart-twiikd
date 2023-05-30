@@ -1,0 +1,1 @@
+fst_data = open('data/fst.bin', 'rb').read()

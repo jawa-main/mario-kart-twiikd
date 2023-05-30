@@ -25,18 +25,28 @@ set GAMEID="RMCE01"
 
 set BUILD_KAMEK=FALSE
 
+set LIBOGC_INCLUDE="C:\devkitPro\libogc\include"
+
 echo ---------------COMPILATION START---------------
 
 IF %BUILD_KAMEK% == TRUE (
     msbuild %KAMEK_SLN%
 )
 
-%CC% -I- -i %K_STDLIB% -i "src/" -i "src/revokart/" -i "src/twiiks/" -Cpp_exceptions off -enum int -Os -use_lmw_stmw on -fp hard -rostr -sdata 0 -sdata2 0 -c -o %OUT% %MAIN_C% -W off
+%CC% -I- -i %K_STDLIB% -i "src/" -i "src/revokart/" -i "src/twiiks/" -i "include/libfat/" -i "include/ogc" -Cpp_exceptions off -enum int -Os -use_lmw_stmw on -fp hard -rostr -sdata 0 -sdata2 0 -c -o %OUT% %MAIN_C% -W off
+if %ERRORLEVEL% == 1 goto :end
 
 python %PY_ELF2SYM% %OUT% %MW_SYMOUT%
+if %ERRORLEVEL% == 1 goto :end
+
 python %PY_JOIN_DOL_SYM% %GAMEID%
+if %ERRORLEVEL% == 1 goto :end
 
 %KAMEK% %OUT% -static=%ENTRYPOINT% -externals=%SYM_TXT% -input-dol=%DOLIN% -output-dol=%DOLOUT% --undef-sym-mask __F.*
-wit copy build/full build/twiikd.wbfs --verbose --progress --overwrite
+if %ERRORLEVEL% == 1 goto :end
 
+@REM wit copy build/full build/twiikd.wbfs --verbose --progress --overwrite --id=TWIIKD
+@REM if %ERRORLEVEL% == 1 goto :end
+
+:end
 echo --------------COMPILATION END--------------

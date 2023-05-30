@@ -5,15 +5,17 @@
             "includePath": [
                 "${default}",
                 "include/kamek/k_stdlib",
-                "C:/RVL_SDK/include",
-                "${workspaceFolder}/src"
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/include",
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "intelliSenseMode": "${default}"
+            "intelliSenseMode": "${default}",
+            "cStandard": "c99",
+            "cppStandard": "c++98",
         }
     ],
     "version": 4

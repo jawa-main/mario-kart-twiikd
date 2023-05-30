@@ -1,15 +1,15 @@
 #include <revokart/rk_stdlib.hpp>
 #include <twiiks/globals.hpp>
 
-// function end
-u32 DVDConvertPathToEntrynum_hook(u32 entrynum)
+u32 DVDReadPrio_hook(u32 readlen)
 {
-    char* filename;
+    DVDFileInfo* info;
+    void* buf;
 
-    __asm("mr %0, r25\n" : "=r"(filename));
+    __asm("mr %0, r27" : "=r"(info));
+    __asm("mr %0, r28" : "=r"(buf));
 
-    OSReport("Storing KV pair {%s:0x%x} to g_DVD_path_entrynum_dict\n", filename, entrynum);
-    hashmap_put(g_DVD_path_entrynum_dict, filename, (void*)entrynum);
+    twiikd_printf("DVDReadPrio file %s, len %x, buf %x", DVDConvertFileInfoToPath(info), readlen, buf);
 
-    return entrynum;
-}
+    return readlen;
+};

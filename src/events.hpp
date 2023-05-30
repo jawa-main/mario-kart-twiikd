@@ -1,65 +1,55 @@
 #include <revokart/rk_stdlib.hpp>
 #include <revokart/Page.hpp>
 
-#include <util.hpp>
-
+#include <twiiks/esrb/esrb_hook.hpp>
 #include <twiiks/dvd/dvd_hooks.hpp>
 #include <twiiks/szs_getfile/no_invisible_walls.hpp>
+#include <twiiks/nand2sd/redirect_nand.hpp>
 #include <twiiks/globals.hpp>
-
-#define BL_MASK 0b01001000000000000000000000000000
-#define DELTA_MASK 0b00000011111111111111111111111100
-
-void runtime_branch(u32 address, void *func, bool link = true)
-{
-    u32 delta = (u32)func - address;
-    u32 bl = BL_MASK | (delta & DELTA_MASK);
-    bl |= link;
-    *(u32 *)address = bl;
-};
+#include <util.hpp>
 
 void twiikd_update()
 {
-    // OSReport("nkw update: %x\n", &twiikd_update);
-
     OSRestoreInterrupts(TRUE);
 };
+
+#define __dolsym__DVDReadPrio_before_restgpr 0x8015e8a8
+#define __dolsym__NANDOpen 0x8019c798
+#define __VERSION__ "v1.0.0 alpha"
+
+#define NOP 0x60000000
+
+#define write32(addr, x) *(u32*)addr = x;
 
 void twiikd_start()
 {
     // code
-    OSReport("nkw start: %x\n", &twiikd_start);
+    twiikd_printf("Version %s compiled at: %s, %s", __VERSION__, __DATE__, __TIME__);
 
+    EGG_Heap_initialize();
     twiikd_init_globals();
 
-    __asm("lis r4, 0x8000");
+    SDA_FSTRootEntry = (FSTFileEntry *)(*(u32 *)(SDA_Address - 0x65C0));
+    SDA_FSTEntryCount = SDA_FSTRootEntry->filesize; // RootEntry is a dir entry, so filesize = entrycount
+    SDA_FSTFilenameTableStart = (char *)(SDA_FSTRootEntry + (SDA_FSTEntryCount * 0xC));
+
+    write32(0x800cd030, NOP);
+    write32(0x801c09a4, NOP);
 };
 
-// #define __relsym__Page_initChildren 0x805ddb7c
 #define __relsym__System_DVDArchive_getFile 0x80515084
-#define __dolsym__DVDConvertPathToEntrynum 0x8015e1b0
+
+int twiiked_before_rel_load()
+{
+
+    __asm("lis r4, 0x8000");
+}
 
 int twiikd_after_rel_load()
 {
-    // hook rel functions
-    // hook_rel(0x806097d4, &TitlePage_onInit_hook);
+    runtime_branch(0x8064c364, &ESRBInitHook, BRANCHTYPE_BRANCH);
 
-    OSReport("twiikd after rel load: %x\n", &twiikd_after_rel_load);
-
-    runtime_branch(__dolsym__DVDConvertPathToEntrynum, &DVDConvertPathToEntrynum_hook, false);
+    // shutdown, cleanup, finish
 
     return 0;
-};
-
-void* DVDReadPrio_hook(s32 read_len)
-{
-    void* buf;
-    DVDFileInfo* dvd_file_info;
-
-    __asm("mr %0, r28" : "=r" (buf));
-    __asm("mr %0, r27" : "=r" (dvd_file_info));
-    
-
-    // OSReport("DVDReadPrio entry %d filename %s\n", )
-    return buf;
 };
