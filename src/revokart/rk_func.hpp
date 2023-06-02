@@ -52,6 +52,6 @@ struct NHTTPResponseHandle
     void *param_p; // createRequest�Őݒ肵��param
 };
 typedef void (*NHTTPReqCallback)(int error, NHTTPResponseHandle* res, void *param);
-void NHTTPCreateRequest(const char *url, int method, char *buf, u32 len, void* callback, void *param);
+void NHTTP_CreateRequest(const char *url, NHTTPReqMethod method, char *buf, u32 len, NHTTPReqCallback callback, void *param);
 
 #endif

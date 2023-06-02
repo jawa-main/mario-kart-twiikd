@@ -47,7 +47,7 @@ void http_req_fmt(char *dst, char *path, char *hostname)
 
 int util_download_file_http(const char *url, u32 buflen, char* outbuf, NHTTPReqCallback callback)
 {
-    NHTTPCreateRequest(url, NHTTP_REQMETHOD_GET, outbuf, buflen, callback, outbuf);
+    NHTTP_CreateRequest(url, NHTTP_REQMETHOD_GET, outbuf, buflen, callback, outbuf);
 };
 
 #endif

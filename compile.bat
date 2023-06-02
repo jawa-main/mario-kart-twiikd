@@ -23,7 +23,7 @@ set PY_ELF2SYM="util/elf2sym.py"
 
 set GAMEID="RMCE01"
 
-set BUILD_KAMEK=FALSE
+set BUILD_KAMEK=TRUE
 
 set LIBOGC_INCLUDE="C:\devkitPro\libogc\include"
 
