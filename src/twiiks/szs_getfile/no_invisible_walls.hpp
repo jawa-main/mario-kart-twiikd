@@ -10,7 +10,7 @@ u8 *System_DVDArchive_getFile_hook(u8 *outbuf, ARCHandle handle)
 
     asm ("mr %0, r28" : "=r"(filename));
 
-    twiikd_printf("Filename %s, buf: %x", filename, outbuf);
+    twiikd_printf("Filename %s, buf: %X", filename, outbuf);
 
     if (strcmp(filename, "course.kcl") != 0) return outbuf;
     // loaded Race/Course/*.szs

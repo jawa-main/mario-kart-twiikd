@@ -44,7 +44,7 @@ s32 DVDConvertFileInfoToEntrynum(DVDFileInfo *file_info)
         }
     }
 
-    twiikd_printf("Could not find file at offset: %x\n", disk_offset);
+    twiikd_printf("Could not find file at offset: %X\n", disk_offset);
 
     return -1;
 };
@@ -121,14 +121,14 @@ u32 hashmap_index(hashmap *map, u32 key_hash)
 {
     for (size_t i = 0; i < map->kv_pairs_len; i++)
     {
-        twiikd_printf("hashmap_index: %x == %x", key_hash, map->kv_pairs[i].key_hash);
+        twiikd_printf("hashmap_index: %X == %X", key_hash, map->kv_pairs[i].key_hash);
         if (key_hash == map->kv_pairs[i].key_hash)
         {
             return i;
         }
     }
 
-    twiikd_printf("TWIIKD_HASHMAP | ERROR | Index of key hash %x not found", key_hash);
+    twiikd_printf("TWIIKD_HASHMAP | ERROR | Index of key hash %X not found", key_hash);
 
     return HASHMAP_ENOKEYIDX;
 }

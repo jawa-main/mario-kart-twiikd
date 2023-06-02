@@ -8,7 +8,7 @@ static hashmap* g_DVD_path_entrynum_dict;
 void twiikd_init_globals()
 {
     g_DVD_path_entrynum_dict = &hashmap_init(HASHMAP_MAX_ENTRY_COUNT);
-    twiikd_printf("g_DVD_path_entrynum_dict: %x", g_DVD_path_entrynum_dict);
+    twiikd_printf("g_DVD_path_entrynum_dict: %X", g_DVD_path_entrynum_dict);
 };
 
 #endif
